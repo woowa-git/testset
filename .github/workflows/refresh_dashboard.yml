@@ -30,7 +30,7 @@ jobs:
           ./gradlew run
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git commit -m "refresh dash board in README.md" -a
+          git commit --allow-empty -m "refresh dash board in README.md" -a
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
